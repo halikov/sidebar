@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preload" href="font/Inter-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="font/Inter-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="font/Inter-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <title>Лепёхин</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar__header">
+          <button class="sidebar__burger btn" width="20" height="20">
+            <svg class="btn__icon">
+              <use class="icon" xlink:href="img/sprite.svg#burger"></use>
+            </svg>
+          </button>
+          <div class="logo">
+            <svg class="logo__icon" width="82" height="31">
+              <use class="logo-white" xlink:href="img/sprite.svg#logo"></use>
+              <use class="logo-black" xlink:href="img/sprite.svg#logo-black"></use>
+            </svg>
+          </div>
+        </div><!-- / sidebar header-->
+        <div class="sidebar__body">
+          <div class="sidebar__nav">
+            <form action="" class="form">
+              <svg class="form__icon" width="20" height="20">
+                <use class="icon" xlink:href="img/sprite.svg#search"></use>
+              </svg>
+              <input class="form__input" type="search" name="search" id="search" placeholder="Search">
+            </form>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item active">
+                  <a href="#" class="nav__link link">
+                    <svg class="link__icon" width="20" height="20">
+                      <use class="icon" xlink:href="img/sprite.svg#home"></use>
+                    </svg>
+                    <span class="link__text">Главная</span> 
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">
+                    <svg class="link__icon" width="20" height="20">
+                      <use class="icon" xlink:href="img/sprite.svg#inbox"></use>
+                    </svg>
+                    <span class="link__text">Входящие</span>
+                    <span class="link__count">12</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">
+                    <svg class="link__icon" width="20" height="20">
+                      <use class="icon" xlink:href="img/sprite.svg#list"></use>
+                    </svg>
+                    <span class="link__text">Задачи</span> 
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">
+                    <svg class="link__icon" width="20" height="20">
+                      <use class="icon" xlink:href="img/sprite.svg#activity"></use>
+                    </svg>
+                    <span class="link__text">Активность</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link link">
+                    <svg class="link__icon" width="20" height="20">
+                      <use class="icon" xlink:href="img/sprite.svg#users"></use>
+                    </svg>
+                    <span class="link__text">Команда</span> 
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div><!-- / .sidebar nav -->
+  
+          <div class="project">
+            <a href="#" class="project__link link">
+              <svg class="link__icon" width="20" height="20">
+                <use class="icon" xlink:href="img/sprite.svg#folder"></use>
+              </svg>
+              <span class="link__text">Проекты</span>
+            </a>
+            <ul class="project__list list">
+              <li class="project__item">
+                <a class="project__link project__link--design link" href="#">Дизайн</a>
+              </li>
+              <li class="project__item">
+                <a class="project__link project__link--web link" href="#">Веб</a>
+              </li>
+              <li class="project__item">
+                <a class="project__link project__link--editing link" href="#">Редактура</a>
+              </li>
+            </ul>
+  
+            <button class="project__button btn">
+              <svg class="plus" width="10" height="10">
+                <use class="icon" xlink:href="img/sprite.svg#plus"></use>
+              </svg>
+              <span class="btn__text">Создать проект</span>
+            </button>
+          </div><!-- / .projects -->
+        </div><!-- / sidebar__body -->
+
+        <div class="sidebar__footer user">
+          <div class="user__img">
+            <img src="img/avatar-image.jpg" width="40" height="40" alt="фото пользователя">
+          </div>
+          <div class="user__info">
+            <p class="user__name">Михаил Воробьев</p>
+            <span class="user__job">Разработчик</span>
+          </div>
+          <button class="user__button btn">
+            <svg class="btn__icon"  width="24" height="24">
+              <use class="icon" xlink:href="img/sprite.svg#kebap"></use>
+            </svg>
+          </button>
+        </div><!-- / .user -->
+    </div><!-- / .sidebar -->
+    <div class="content">
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Заголовок страницы</h2>
+          <label class="theme" for="mode" aria-label="theme mode">
+            <input class="theme__input" type="checkbox" name="checkbox" id="mode">
+            <span class="theme__checker"></span>
+          </label>
+          
+          <p class="section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, consequuntur pariatur. Blanditiis, temporibus fugit magnam assumenda veritatis, doloremque delectus asperiores dolore unde, numquam earum doloribus ratione maiores. Ut, dolorem adipisci.</p>
+          <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima quod officiis, ratione perspiciatis quo, tenetur dolores molestiae ab, molestias consequatur? Nostrum molestiae eveniet veritatis maxime quisquam vero perspiciatis natus officiis vel magni assumenda ad, deserunt ipsum ea voluptatum, alias suscipit tenetur, dolorem in modi minus odio. Error eos omnis quis voluptatum sed, ullam natus iste nisi odit eum odio rerum expedita tenetur dolorem facilis cumque esse officiis repellat ab laudantium nobis in! Iure ea, illo impedit odit minus a voluptas ab esse numquam dicta maxime voluptatem quasi nobis dolore. A adipisci illo corporis sapiente cumque quis temporibus vel accusamus nulla quo obcaecati fugit voluptate sequi aliquam voluptates dolore sint, ut beatae architecto soluta? Explicabo maiores officia ratione. Alias quos autem voluptate obcaecati porro, repudiandae blanditiis ipsa dicta corrupti maiores sequi saepe, aliquid expedita vero laborum eligendi eos deleniti aperiam nisi mollitia incidunt, pariatur sint! Harum impedit voluptatibus vel sapiente? Pariatur dolor in hic beatae, et mollitia officiis error adipisci enim illum voluptate vel? Incidunt enim pariatur sint amet laborum neque ad. Id, facilis ut odio unde aliquid itaque, alias aut laboriosam, nihil minima fuga at neque? Veritatis dolorem, facilis rerum corrupti error mollitia reprehenderit ullam consequuntur. Dolorem, cupiditate omnis.</p>
+        </div>
+      </section>
+    </div>
+
+  <script src="js/burger.js"></script>
+</body>
+</html>
