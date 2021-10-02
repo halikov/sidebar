@@ -11,7 +11,7 @@ burger.addEventListener('click', (ev) => {
   sidebar.classList.toggle('active');
 });
 
-function themeChange () {
+function themeSwitcher () {
   
   label.addEventListener('click', () => {
     if(themeDot.checked) {
@@ -24,6 +24,6 @@ function themeChange () {
 };
 
 label.addEventListener('click', () => {
-  themeChange();
+  themeSwitcher();
 })
 
